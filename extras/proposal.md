@@ -4,19 +4,19 @@
 The dateutil library provides a number of extensions to Python's standard datetime handling libraries. This talk will provide an overview of how to use (and not use!) dateutil to improve your datetime-handling experience, and also cover some of the recent changes to the library.
 
 ## Experience Level
-Intermediate
+Novice
 
 ## Abstract
 *(Detailed overview. Will be made public if your talk is accepted.)*
 
-Human methods of timekeeping are complicated, sometimes reflecting the underlying complexity of the natural cycles of life on earth, sometimes reflecting historical lock-in. dateutil attempts to provide tools to make dealing with numerous standards and edge cases a bit easier.
+Human methods of timekeeping are complicated, sometimes reflecting the underlying complexity of the natural cycles of life on earth, sometimes historical lock-in. dateutil attempts to provide tools to make dealing with the numerous datetime-handling standards and edge cases a bit easier.
 
 This talk will give an overview on how to use dateutil for:
 
 - Time zones:
     * The `tz` module provides a number of `tzinfo` subclasses to make it easy to incorporate time zone data from various formats into your application.
 - Arithmetic:
-    * The `relativedelta` and (forthcoming) `absolutedelta` classes provide an unambiguous way to perform specific arithmetical operations on datetimes.
+    * The `relativedelta` class provides an unambiguous way to perform specific arithmetical operations on datetimes.
 - Recurrence rules:
     * The `rrule` module implements the iCalendar RFC2445 specification for recurrence rules, allowing you to generate dates by a specific rule, e.g. "every third sunday in 2016" or "every 5 minutes from 9AM to 5PM every Monday through Friday".
 - Datetime parsing:
@@ -28,7 +28,7 @@ This talk will give an overview on how to use dateutil for:
 *(Sections and key points of the talk meant to give the program committee an overview.)*
 
 - General Overview [Total: 1m]
-    - What's so tough about datetimes? (1m)
+    - What's so tough about date and time? (1m)
 - Time Zones [Total: 8m30s]  [Running total: 9m30s]
     - Introduction to time zones (1m)
         * Daylight savings times, utc offsets and the basics
@@ -81,5 +81,5 @@ This talk will give an overview on how to use dateutil for:
 Note: The times given here are a "best case scenario" estimates, keeping things very tight and going over them in very cursory detail. Expect significant padding.
 
 ## Additional Notes:
-
+* I have been the primary maintainer of dateutil since early 2015
 * There is probably enough material here that it can be a 55 minute talk, but also enough to cut out to make it a 25 minute talk. I would prefer a 25 minute slot.
