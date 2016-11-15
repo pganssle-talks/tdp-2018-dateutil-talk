@@ -11817,8 +11817,7 @@ a.anchor-link {
     <br/>
     <br/>
     <span style='font-size: 30px'>
-        Paul Ganssle<br/>
-        2016-07-13<br/><br/>
+        Paul Ganssle<br/><br/>
         <a href="https://github.com/dateutil/dateutil">https://github.com/dateutil/dateutil</a> - <a href="https://dateutil.readthedocs.io">https://dateutil.readthedocs.io</a>
     </span>
 </div>
@@ -11831,15 +11830,11 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Package-overview:">Package overview:<a class="anchor-link" href="#Package-overview:">&#182;</a></h2><ul>
-<li><p><strong>dateutil</strong></p>
-<ul>
 <li><code>relativedelta</code>: Handling of "calendar" offsets</li>
 <li><code>rrule</code>: Generation of RFC(2445) recurrence relations</li>
 <li><code>tz</code>: Time zone handling</li>
 <li><code>parser</code>: Parsing arbitrary datetimes</li>
 <li><code>easter</code>: Calculation of easter</li>
-</ul>
-</li>
 </ul>
 
 </div>
@@ -11870,16 +11865,16 @@ a.anchor-link {
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
-<span class="n">in_2015</span> <span class="o">=</span> <span class="n">relativedelta</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2015</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">in_2015</span> <span class="o">=</span> <span class="n">relativedelta</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2015</span><span class="p">)</span>
 
 <span class="c1"># The same day in different years</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2009</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">dt</span> <span class="o">+</span> <span class="n">in_2015</span>
 </pre></div>
 
@@ -11891,7 +11886,7 @@ a.anchor-link {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[100]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11906,7 +11901,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Addition and subtraction do the same thing with absolute arguments</span>
@@ -11921,7 +11916,7 @@ a.anchor-link {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[101]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11933,7 +11928,7 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
@@ -11975,7 +11970,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
@@ -12063,7 +12058,7 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12089,11 +12084,12 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dts</span> <span class="o">=</span> <span class="p">[</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
-<span class="n">next_sunday</span> <span class="o">=</span> <span class="n">relativedelta</span><span class="p">(</span><span class="n">weekday</span><span class="o">=</span><span class="n">SU</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">next_sunday</span> <span class="o">=</span> <span class="n">relativedelta</span><span class="p">(</span><span class="n">weekday</span><span class="o">=</span><span class="n">SU</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="n">dts</span> <span class="o">=</span> <span class="p">[</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
 <span class="c1"># Retrieve the Sunday on or following a given date</span>
 <span class="n">print_dts</span><span class="p">([(</span><span class="n">dt</span><span class="p">,</span> <span class="n">dt</span> <span class="o">+</span> <span class="n">next_sunday</span><span class="p">)</span> <span class="k">for</span> <span class="n">dt</span> <span class="ow">in</span> <span class="n">dts</span><span class="p">])</span>
 </pre></div>
@@ -12123,11 +12119,12 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[102]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dts</span> <span class="o">=</span> <span class="p">[</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-<span class="n">wednesday_after_next</span> <span class="o">=</span> <span class="n">relativedelta</span><span class="p">(</span><span class="n">weekday</span><span class="o">=</span><span class="n">WE</span><span class="p">(</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wednesday_after_next</span> <span class="o">=</span> <span class="n">relativedelta</span><span class="p">(</span><span class="n">weekday</span><span class="o">=</span><span class="n">WE</span><span class="p">(</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="n">dts</span> <span class="o">=</span> <span class="p">[</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
 
 <span class="c1"># Retrieve the second Wednesday after a given date</span>
 <span class="n">print_dts</span><span class="p">([(</span><span class="n">dt</span><span class="p">,</span> <span class="n">dt</span> <span class="o">+</span> <span class="n">wednesday_after_next</span><span class="p">)</span> <span class="k">for</span> <span class="n">dt</span> <span class="ow">in</span> <span class="n">dts</span><span class="p">])</span>
@@ -12201,13 +12198,13 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Martin Luther King Day is the 3rd Monday in February, so find the 3rd Monday on</span>
 <span class="c1"># or following the 1st day in February.</span>
-<span class="n">mlk_day</span> <span class="o">=</span> <span class="n">relativedelta</span><span class="p">(</span><span class="n">years</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">month</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">weekday</span><span class="o">=</span><span class="n">MO</span><span class="p">(</span><span class="o">+</span><span class="mi">3</span><span class="p">))</span>
-<span class="p">[</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">mlk_day</span> <span class="o">*</span> <span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]</span>
+<span class="n">mlk_day</span> <span class="o">=</span> <span class="n">relativedelta</span><span class="p">(</span><span class="n">month</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">weekday</span><span class="o">=</span><span class="n">MO</span><span class="p">(</span><span class="o">+</span><span class="mi">3</span><span class="p">))</span>
+<span class="p">[</span><span class="n">datetime</span><span class="p">(</span><span class="n">yr</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">mlk_day</span> <span class="k">for</span> <span class="n">yr</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">2017</span><span class="p">)]</span>
 </pre></div>
 
 </div>
@@ -12218,7 +12215,7 @@ a.anchor-link {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[18]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[93]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -13263,22 +13260,133 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Use-dateutil-2.6.0+-or-pytz-if-you-need-accuracy-during-DST-transitions">Use dateutil 2.6.0+ or pytz if you need accuracy during DST transitions<a class="anchor-link" href="#Use-dateutil-2.6.0+-or-pytz-if-you-need-accuracy-during-DST-transitions">&#182;</a></h3><ul>
-<li>We've recently overhauled the time zone handling logic to allow dateutil to properly represent ambiguous dates, e.g.:</li>
-</ul>
+<h2 id="Ambiguous-and-imaginary-times">Ambiguous and imaginary times<a class="anchor-link" href="#Ambiguous-and-imaginary-times">&#182;</a></h2><p>Ambiguous times are times where the same "wall time" occurs twice, such as during a DST to STD transition. As of version 2.6.0, <code>dateutil</code> provides the <code>tz.datetime_ambiguous()</code> method to determine if a datetime is ambiguous in a given zone.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt1</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">tzutc</span><span class="p">())</span>
-<span class="n">dt2</span> <span class="o">=</span> <span class="n">dt1</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dt1</span><span class="o">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">NYC</span><span class="p">))</span>       <span class="c1"># 1:30 EDT</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dt2</span><span class="o">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">NYC</span><span class="p">))</span>       <span class="c1"># 1:30 EST</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt1</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">tzutc</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">dt1</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">i</span><span class="p">))</span><span class="o">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">NYC</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> | </span><span class="si">{}</span><span class="s1"> |  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span> <span class="n">dt</span><span class="o">.</span><span class="n">tzname</span><span class="p">(),</span> 
+                                   <span class="s1">&#39;Ambiguous&#39;</span> <span class="k">if</span> <span class="n">tz</span><span class="o">.</span><span class="n">datetime_ambiguous</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;Unambiguous&#39;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2004-10-31 00:30:00-04:00 | EDT |  Unambiguous
+2004-10-31 01:30:00-04:00 | EDT |  Ambiguous
+2004-10-31 01:30:00-05:00 | EST |  Ambiguous
+2004-10-31 02:30:00-05:00 | EST |  Unambiguous
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Imaginary times are wall times that don't exist in a given time zone, such as during an STD to DST transition.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt1</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">tzutc</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">dt1</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">i</span><span class="p">))</span><span class="o">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">NYC</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> | </span><span class="si">{}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span> <span class="n">dt</span><span class="o">.</span><span class="n">tzname</span><span class="p">()))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2004-04-04 01:30:00-05:00 | EST 
+2004-04-04 03:30:00-04:00 | EDT 
+2004-04-04 04:30:00-04:00 | EDT 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tz</span><span class="o">.</span><span class="n">datetime_exists</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">tz</span><span class="o">=</span><span class="n">NYC</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[98]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Constructing-ambiguous-dates">Constructing ambiguous dates<a class="anchor-link" href="#Constructing-ambiguous-dates">&#182;</a></h2><p>Before the implementation of PEP-495 in Python 3.6, there is no ambiguous datetime support built-in to Python. <code>dateutil</code> implements PEP-495-style time zones in a backwards-compatible way. PEP-495 adds a <code>fold</code> attribute to <code>datetime</code> objects to specify whether they are the first (DST, <code>fold</code> = 0) or second (STD, <code>fold</code> = 1) occurence. To provide a backwards-compatible interface, <code>dateutil</code> provides a <code>tz.enfold</code> function that works in all versions:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">tz</span><span class="o">.</span><span class="n">enfold</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">NYC</span><span class="p">),</span> <span class="n">fold</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
+<span class="n">dt</span>
 </pre></div>
 
 </div>
@@ -13292,24 +13400,59 @@ a.anchor-link {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>2004-10-31 01:30:00-04:00
-2004-10-31 01:30:00-05:00
 </pre>
 </div>
 </div>
 
+<div class="output_area"><div class="prompt output_prompt">Out[89]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>datetime.datetime(2004, 10, 31, 1, 30, tzinfo=tzfile(&#39;/usr/share/zoneinfo/America/New_York&#39;))</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Even so, there is no simple way (currently) to specify which side of the transition you want to be on when constructing your datetime - the easiest way is to convert it from some pegged-to-UTC version.</p>
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">tz</span><span class="o">.</span><span class="n">enfold</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2004</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">NYC</span><span class="p">),</span> <span class="n">fold</span><span class="o">=</span><span class="mi">1</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
+<span class="n">dt</span>    <span class="c1"># Note: In &lt; Python 3.6 this returns a _DatetimeWithFold compatibility object</span>
+</pre></div>
 
 </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2004-10-31 01:30:00-05:00
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[91]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>_DatetimeWithFold(2004, 10, 31, 1, 30, tzinfo=tzfile(&#39;/usr/share/zoneinfo/America/New_York&#39;))</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -13540,10 +13683,7 @@ a.anchor-link {
 <li>When you know the format of the string: Use <code>strptime</code></li>
 </ul>
 <ul>
-<li>When you know the format of the string to within a few possibilities:<ul>
-<li>Almost certainly faster and more accurate to guess-and-check.</li>
-</ul>
-</li>
+<li>When you know the format of the string to within a few possibilities, it's almost certainly faster and more accurate to guess-and-check.</li>
 </ul>
 
 </div>
