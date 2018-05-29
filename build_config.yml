@@ -9,4 +9,4 @@ dirs:
 
 notebook: dateutil_presentation.ipynb
 template: custom_template.tpl
-slides: notebook.slides.html
+slides: dateutil_presentation.slides.html
