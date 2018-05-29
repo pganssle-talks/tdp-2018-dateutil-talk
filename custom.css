@@ -310,6 +310,11 @@ body {
 .reveal .controls .navigate-down.enabled:hover {
   border-top-color: #0000f1; }
 
+.reveal .controls {
+  top: 0px;
+  right: 0px;
+}
+
 /*********************************************
  * PROGRESS BAR
  *********************************************/
@@ -325,8 +330,12 @@ body {
   /*******************
   * Slides
   *******************/
+.reveal {
+  overflow-y: hidden;
+}
+
 .reveal .slides {
-  height: 95%;
+  height: 98%;
   width: 95%;
   top: auto;
   bottom: auto;
@@ -336,6 +345,32 @@ body {
   margin-bottom: auto !important;
 }
 
+.reveal .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  bottom: 0.5em;
+  height: 7%;
+  font-size: 3rem;
+  color: #7f7f7f;
+}
+
+
+.reveal .footer span#website {
+    text-decoration: underline;
+}
+
+.reveal .footer span#twitter {
+    font-weight: bold;
+}
+
+.reveal .footer span#logo img {
+    margin-bottom: -1em;
+}
+
 .reveal .slides>section {
   min-height: 90% !important;
   top: auto !important;
@@ -343,6 +378,15 @@ body {
 
 .reveal .slides>section>section {
   min-height: 100% !important;
+}
+
+.reveal ul ul
+{
+  padding: 0px 25px;
+}
+
+ul {
+    width: 95%;
 }
 
 div.prompt {
@@ -368,5 +412,3 @@ div.output_subarea {
 }
 
 .rendered_html
-
-
