@@ -4,3 +4,4 @@ python-dateutil
 click
 pandas
 qrcode
+Pillow
