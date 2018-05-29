@@ -3,7 +3,6 @@ files:
 
 dirs:
     - reveal.js
-    - extras
     - fonts
     - images
 
