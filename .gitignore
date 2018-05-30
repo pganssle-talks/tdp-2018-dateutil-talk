@@ -6,3 +6,8 @@ __pycache__
 *.py[co]
 
 *.slides.html
+
+
+# Timezone map stuff
+timezones.geojson.zip
+zone_subset.geojson
